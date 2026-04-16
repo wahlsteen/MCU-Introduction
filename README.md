@@ -29,6 +29,7 @@ The ATmega328P offers a balanced set of peripherals: GPIO, 10-bit ADC, PWM, and 
 Its key strengths are stability, excellent documentation, and vast library support. However, it is beginning to show its age compared to modern 32-bit microcontrollers in both performance and memory capacity.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/ATMEGA328P-PU.jpg/1280px-ATMEGA328P-PU.jpg" width=30%>
+
 ---
 
 ## **LGT8F – An Enhanced AVR-Compatible Alternative**
@@ -44,6 +45,7 @@ The main drawback is that compatibility is not always perfect. Some libraries an
 Overall, it is an attractive option for users who want to stay within the Arduino ecosystem but gain additional performance and features.
 
 <img src="https://modulshop.cdn.shoprenter.hu/custom/modulshop/image/cache/w900h500wt1q100/product/01%20Mikrovez%C3%A9rl%C5%91k/01%20Arduino/1-1-26_LGT8F328P_mini-3.jpg.webp?lastmod=0.1769439969" width=30%>
+
 ---
 
 # **8051**
@@ -60,6 +62,8 @@ The ecosystem is more limited than that of ARM-based microcontrollers, and docum
 
 Overall, the STC8G is a capable and practical microcontroller, particularly suited for low-cost and hardware-friendly applications.
 
+<img src="https://github.com/wahlsteen/MCU-Introduction/blob/main/stc8g.jpg">
+
 ---
 
 ## **CH552 – Low-Cost USB Microcontroller with 8051 Heritage**
@@ -71,6 +75,8 @@ Its defining feature is the built-in USB controller, allowing it to function dir
 While its resources are limited (16 kB flash, 1 kB RAM), they are sufficient for many simple applications. It includes GPIO, ADC, and basic communication interfaces. Programming is done via a USB bootloader, eliminating the need for an external programmer.
 
 The main limitation is the ecosystem. Toolchains, libraries, and documentation are less mature than those for ARM-based platforms, and debugging capabilities are more limited.
+
+<img src="https://raw.githubusercontent.com/wahlsteen/MCU-Introduction/refs/heads/main/ch552.avif" width=40%>
 
 ---
 
@@ -88,6 +94,8 @@ Development is typically done using Texas Instruments’ tools (Code Composer St
 
 The main drawback is lower raw performance and a smaller community compared to more mainstream microcontrollers.
 
+<img src="https://media.rs-online.com/image/upload/bo_1.5px_solid_white,b_auto,c_pad,dpr_2,f_auto,h_399,q_auto,w_710/c_pad,h_399,w_710/F8176411-01?pgw=1" width=20%>
+
 ---
 
 # **ARM**
@@ -104,6 +112,8 @@ Programming can be done via the Arduino IDE or more advanced development environ
 
 Its main limitation is that it is not as power-efficient as dedicated low-power microcontrollers, and some Arduino libraries are not fully optimized for it.
 
+<img src="https://raw.githubusercontent.com/wahlsteen/MCU-Introduction/refs/heads/main/images/samd21.avif" width=40%>
+
 ---
 
 ## **STM32 – A Flexible Industry Standard**
@@ -115,6 +125,8 @@ The series ranges from simple Cortex-M0 devices to powerful Cortex-M7 processors
 Development is commonly done using STM32CubeIDE with HAL libraries, which simplifies configuration. At the same time, developers can work directly with registers for full control. Debugging via SWD is highly capable.
 
 The main drawback is complexity. The large product range and configuration options can be overwhelming, especially for beginners.
+
+<img src="https://raw.githubusercontent.com/wahlsteen/MCU-Introduction/refs/heads/main/images/stm32.avif" width=40%>
 
 ---
 
@@ -128,6 +140,8 @@ It also supports Thread and Zigbee, and includes a full set of peripherals such 
 
 Its SDK (Nordic SDK, Zephyr RTOS) is powerful but more complex than Arduino-based environments. In return, it provides excellent control over power consumption and radio performance.
 
+<img src="https://raw.githubusercontent.com/wahlsteen/MCU-Introduction/refs/heads/main/images/nRF52840.avif" width=40%>
+
 ---
 
 ## **Raspberry Pi Pico (RP2040) – Flexible and Experimental**
@@ -140,6 +154,7 @@ Programming is very user-friendly. Code can be uploaded via USB by simply copyin
 
 Its main limitations are the lack of built-in wireless connectivity (except Pico W) and a relatively simple ADC.
 
+<img src="https://media.rs-online.com/image/upload/bo_1.5px_solid_white,b_auto,c_pad,dpr_2,f_auto,h_399,q_auto,w_710/c_pad,h_399,w_710/Y2122161-01?pgw=1" width=40%>
 ---
 
 # **RISC-V**
@@ -152,6 +167,8 @@ They run up to ~144 MHz and offer a wide range of peripherals, including ADC, ti
 
 Their main strength is cost efficiency. However, the ecosystem is less mature, with less polished tools and documentation.
 
+<img src="https://raw.githubusercontent.com/wahlsteen/MCU-Introduction/refs/heads/main/images/ch32v.avif" width=40%>
+
 ---
 
 ## **ESP32-C6 – Modern Connected SoC**
@@ -162,9 +179,11 @@ Unlike simpler MCUs, it functions as a full system-on-chip, capable of running c
 
 Its strengths are integration and connectivity, while its weaknesses include higher complexity and less deterministic behavior.
 
+<img src="https://www.espboards.dev/img/GUJJKYclc3-300.png">
+
 ---
 
-# 📊 **Translated Table**
+# **Comparision Table**
 
 | MCU           | Architecture | MHz    | Flash / RAM            | GPIO   | ADC       | Communication       | Power      | Form Factor | Programming    | Languages    | Connectivity      |
 | ------------- | ------------ | ------ | ---------------------- | ------ | --------- | ------------------- | ---------- | ----------- | -------------- | ------------ | ----------------- |
